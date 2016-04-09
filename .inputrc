@@ -1,0 +1,8 @@
+# mappings for making up and down arrow searching through history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[C": forward-char
+"\e[D": backward-char
+
+#Use tab to cycle through all the possible completions.
+"\t": menu-complete
