@@ -143,4 +143,17 @@ lor = "Lorem ipsum dolor sit amet"
 
 
 # -------------------------------------------------------------------------------------
-# 
+# .join()
+"".join(iteravel)
+    # concatena todos os elementos do iterável
+    # pode utilizando uma string especial como concatenador ou ser uma string vazia
+    # todos os elementos do iterável devem ser do tipo string
+    i=['a','bc','d']
+    print "\n".join(i)
+    "".join(i)
+
+    ii=['a', 10, 'b']
+    "".join(ii)
+        # Traceback (most recent call last):
+        #   File "<stdin>", line 1, in <module>
+        # TypeError: sequence item 1: expected string, int found
