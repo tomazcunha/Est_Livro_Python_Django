@@ -157,3 +157,6 @@ lor = "Lorem ipsum dolor sit amet"
         # Traceback (most recent call last):
         #   File "<stdin>", line 1, in <module>
         # TypeError: sequence item 1: expected string, int found
+
+# -------------------------------------------------------------------------------------
+#
