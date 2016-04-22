@@ -160,3 +160,51 @@ lor = "Lorem ipsum dolor sit amet"
 
 # -------------------------------------------------------------------------------------
 #
+"abcdef".partition("c")
+part = "abcdef".partition("c")
+print part
+('ab', 'c', 'def')
+
+# -------------------------------------------------------------------------------------
+#
+"span eggs span".replace("eggs", "span")
+
+# -------------------------------------------------------------------------------------
+#
+"span".rjust(10)
+
+# -------------------------------------------------------------------------------------
+#
+"span:ham:eggs".split(":")
+"span:ham:eggs".split(":",1)
+lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna ligula, suscipit vel mauris ut, euismod pharetra eros. Nunc eu scelerisque elit. Donec eget commodo leo. Integer posuere egestas tristique."
+lorem.split()
+
+a = """
+span
+eggs
+ham
+"""
+a.splitlines()
+
+# -------------------------------------------------------------------------------------
+#
+"Nome: Tom".startswith("Nome")
+
+# -------------------------------------------------------------------------------------
+#
+"   Nome   ".strip()
+":-:Nome:-:".strip(":-:")
+":-:Nome:-:".rstrip(":-:")
+":-:Nome:-:".lstrip(":-:")
+
+# -------------------------------------------------------------------------------------
+#
+lorem.title()
+
+# -------------------------------------------------------------------------------------
+#
+a=1
+b="texto"
+for item in dir(a):
+    print 
