@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- encoding: utf-8 -*-
 # generator.py - Exemplo de uso de generators
 
 db = (
@@ -26,4 +26,52 @@ b.send("ok")
 try:
     print b.next()
 except StopIteration:
-    pass 
+    pass
+
+
+
+# ------------------------------------------------------------
+# http://pythonclub.com.br/python-generators.html
+
+def generator():
+    n = 1
+    print("Essa é uma função generator")
+    yield n
+    n += 1
+    yield n
+    n += 1
+    yield n
+
+a = generator()     # retorna um objeto mas não executa a função imediatamente
+
+print a
+<generator object generator at 0x7f458bb3c9b0>
+
+next(a)
+
+# ------------------------------------------------------------
+# https://diofeher.wordpress.com/2011/04/12/explicando-iterables-generators-yield-no-python/
+
+generator = (letra for letra in "hjasdfjhhjasdfg")
+generator.next()
+>>> "h"
+generator.next()
+>>> "j"
+
+# ------------------------------------------------------------
+#
+def gerador():
+    for i in range(10):
+        yield i * 2
+
+gera = gerador()
+print gera
+gera.next()
+
+for gerado in gera:
+    print gerado
+
+>>> print gerador()
+<generator object gerador at 0x7f458bb3cbe0>
+>>> print gerador().next()
+0
